@@ -18,7 +18,6 @@ export default class Login extends React.Component {
       password: "",
     };
   }
-
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   login = () => {
@@ -98,3 +97,4 @@ export default class Login extends React.Component {
     );
   }
 }
+
