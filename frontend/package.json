@@ -1,5 +1,5 @@
 {
-  "name": "product-dash",
+  "name": "product",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,12 +17,13 @@
     "react": "^16.13.1",
     "react-bootstrap-sweetalert": "^5.2.0",
     "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "sweetalert": "^2.1.2"
   },
   "scripts": {
-    "start": "set PORT=3009 && react-scripts start",
+    "start": "set PORT=2001 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
