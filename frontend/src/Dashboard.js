@@ -1,12 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
-  Button, TextField, Dialog, DialogActions, LinearProgress,
-  DialogTitle, DialogContent, TableBody, Table,
-  TableContainer, TableHead, TableRow, TableCell
-} from '@material-ui/core';
-import { Pagination } from '@material-ui/lab';
-import swal from 'sweetalert';
-const axios = require('axios');
+  Button,
+  TextField,
+  Dialog,
+  DialogActions,
+  LinearProgress,
+  DialogTitle,
+  DialogContent,
+  TableBody,
+  Table,
+  TableContainer,
+  TableHead,
+  TableRow,
+  TableCell,
+} from "@material-ui/core";
+import { Pagination } from "@material-ui/lab";
+import swal from "sweetalert";
+const axios = require("axios");
 
 export default class Dashboard extends Component {
   constructor() {
@@ -40,7 +50,7 @@ export default class Dashboard extends Component {
       });
     }
   };
-  // Get product function
+
   getProduct = () => {
     this.setState({ loading: true });
 
@@ -72,7 +82,6 @@ export default class Dashboard extends Component {
       });
   };
 
-  // Delete product function
   deleteProduct = (id) => {
     axios
       .post(
@@ -129,7 +138,7 @@ export default class Dashboard extends Component {
       });
     }
   };
-  // Add product function
+
   addProduct = () => {
     const fileInput = document.querySelector("#fileInput");
     const file = new FormData();
@@ -171,8 +180,6 @@ export default class Dashboard extends Component {
       });
   };
 
-  // Update/Edit product function
-  
   updateProduct = () => {
     const fileInput = document.querySelector("#fileInput");
     const file = new FormData();

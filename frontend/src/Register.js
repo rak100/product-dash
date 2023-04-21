@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-import swal from 'sweetalert';
-import { Button, TextField, Link } from '@material-ui/core';
-const axios = require('axios');
+import React, { Component } from "react";
+import swal from "sweetalert";
+import { Button, TextField, Link } from "@material-ui/core";
+const axios = require("axios");
 
-//cont from: class register
 export default class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +37,7 @@ export default class Register extends React.Component {
         });
       });
   };
-  //cont from render () funct
+
   render() {
     return (
       <div style={{ marginTop: "200px" }}>

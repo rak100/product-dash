@@ -6,11 +6,14 @@ body {
 .button_style {
   margin-left: 10px !important;
   margin-right: 10px;
+  /* background-color: #133c3d; */
 }
+
 .centerTable {
   margin: 0px auto;
 }
 
 h2 {
     color: #3f51b5;
+    /* color: #133c3d; */
 }
