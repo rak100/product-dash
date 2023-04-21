@@ -7,10 +7,9 @@ var multer = require("multer"),
   bodyParser = require("body-parser"),
   path = require("path");
 var mongoose = require("mongoose");
-// mongoose.connect("mongodb://localhost/productDB"); //change db link
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/Product-Dash"
-);
+  "mongodb+srv://rak100:ahmad123@cluster0.92xg0ts.mongodb.net/test"
+); //change db link
 var fs = require("fs");
 var product = require("./model/product.js");
 var user = require("./model/user.js");
