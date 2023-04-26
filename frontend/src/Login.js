@@ -1,7 +1,9 @@
 //Module Imports
 import React, { Component } from "react";
 import swal from "sweetalert";
-import { Button, TextField, Link } from "@material-ui/core";
+import { Button, TextField } from "@material-ui/core";
+import { Link } from "react-router-dom";
+
 
 // Variables
 
@@ -23,7 +25,7 @@ export default class Login extends React.Component {
     const pwd = bcrypt.hashSync(this.state.password, salt);
 
     axios
-      .post("http://localhost:2000/login", {
+      .post("https://productbackend.herokuapp.com/login", {
         username: this.state.username,
         password: pwd,
       })
@@ -90,7 +92,7 @@ export default class Login extends React.Component {
             Login
           </Button>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="/register">Register</Link>
+          <Link to="/register">Register</Link>
         </div>
       </div>
     );

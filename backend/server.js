@@ -8,7 +8,7 @@ var multer = require("multer"),
   path = require("path");
 var mongoose = require("mongoose");
 mongoose.connect(
-  "mongodb+srv://rak100:ahmad123@cluster0.92xg0ts.mongodb.net/test"
+  "mongodb+srv://awais:awais@cluster0.tpfm3.mongodb.net/products?retryWrites=true&w=majority"
 ); //change db link
 var fs = require("fs");
 var product = require("./model/product.js");

@@ -60,7 +60,7 @@ export default class Dashboard extends Component {
       data = `${data}&search=${this.state.search}`;
     }
     axios
-      .get(`http://localhost:2000/get-product${data}`, {
+      .get(`https://productbackend.herokuapp.com/get-product${data}`, {
         headers: {
           token: this.state.token,
         },
@@ -85,7 +85,7 @@ export default class Dashboard extends Component {
   deleteProduct = (id) => {
     axios
       .post(
-        "http://localhost:2000/delete-product",
+        "https://productbackend.herokuapp.com/delete-product",
         {
           id: id,
         },
@@ -149,7 +149,7 @@ export default class Dashboard extends Component {
     file.append("price", this.state.price);
 
     axios
-      .post("http://localhost:2000/add-product", file, {
+      .post("https://productbackend.herokuapp.com/add-product", file, {
         headers: {
           "content-type": "multipart/form-data",
           token: this.state.token,
@@ -191,7 +191,7 @@ export default class Dashboard extends Component {
     file.append("price", this.state.price);
 
     axios
-      .post("http://localhost:2000/update-product", file, {
+      .post("https://productbackend.herokuapp.com/update-product", file, {
         headers: {
           "content-type": "multipart/form-data",
           token: this.state.token,
@@ -502,7 +502,7 @@ export default class Dashboard extends Component {
                   </TableCell>
                   <TableCell align="center">
                     <img
-                      src={`http://localhost:2000/${row.image}`}
+                      src={`https://productbackend.herokuapp.com/${row.image}`}
                       width="70"
                       height="70"
                     />

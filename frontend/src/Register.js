@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import swal from "sweetalert";
-import { Button, TextField, Link } from "@material-ui/core";
+import { Button, TextField } from "@material-ui/core";
+import { Link } from "react-router-dom";
 const axios = require("axios");
 
 export default class Register extends React.Component {
@@ -17,7 +18,7 @@ export default class Register extends React.Component {
 
   register = () => {
     axios
-      .post("http://localhost:2000/register", {
+      .post("https://productbackend.herokuapp.com/register", {
         username: this.state.username,
         password: this.state.password,
       })
@@ -93,7 +94,7 @@ export default class Register extends React.Component {
             Register
           </Button>{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="/">Login</Link>
+          <Link to="/">Login</Link>
         </div>
       </div>
     );
