@@ -31,7 +31,7 @@ Click on 'Video to see the app functionality
  [Video](./frontend/src/images/Product-Dash.gif)
 ## Usage
 
-* Navigate to Heroku [Product-Dash](https://productdash.herokuapp.com/)
+* Navigate to WebPage [Product-Dash](https://productdash.netlify.app/)
 * [Product-Dash](https://github.com/rak100/product-dash) on GitHub.
 
 #
